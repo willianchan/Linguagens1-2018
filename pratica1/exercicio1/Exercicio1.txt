@@ -1,0 +1,21 @@
+1.	C:\Program Files (x86)\Java\jdk1.8.0_151
+
+2.	C:\Program Files (x86)\Java\jdk1.8.0_151\bin
+
+3.	C:\minhapasta> javac nomedoarquivo.java - Executa javac.exe, o compilador.
+	
+4.	C:\minhapasta> java nomedoarquivo - Executa o interpretador java
+
+5.	Variável de ambiente é uma variável de um sistema operacional que geralmente 
+	contém informações sobre o sistema, caminhos de diretórios específicos no sistema de 
+	arquivos e as preferências do utilizador. Ela pode afetar a forma como um processo se 
+	comporta, e cada processo pode ler e escrever variáveis de ambiente
+	
+6.	Não, é necessário ter permissões de administrador para criar ou alterar variáveis de ambiente
+
+7.	Em Pesquisar, procure e selecione: Sistema (Painel de Controle)
+	Clique no link Configurações avançadas do sistema.
+	Clique em Variáveis de Ambiente. Na seção Variáveis do Sistema, localize a variável de ambiente PATH e selecione-a. Clique em Editar. Se a variável de ambiente PATH não existir, clique em Novo.
+	Na janela Editar Variável de Sistema (ou Nova Variável de Sistema), especifique o valor da variável de ambiente PATH. Clique em OK. Feche todas as janelas restantes clicando em OK.
+	
+8.	JAVA_HOME é o diretório raíz onde o Java está instalado, além de ser usado para onfigurar as variáveis seguintes também é continuamente referenciado por aplicativos e  frameworks desenvolvidos com Java
