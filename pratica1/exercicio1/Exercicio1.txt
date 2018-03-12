@@ -18,4 +18,4 @@
 	Clique em Variáveis de Ambiente. Na seção Variáveis do Sistema, localize a variável de ambiente PATH e selecione-a. Clique em Editar. Se a variável de ambiente PATH não existir, clique em Novo.
 	Na janela Editar Variável de Sistema (ou Nova Variável de Sistema), especifique o valor da variável de ambiente PATH. Clique em OK. Feche todas as janelas restantes clicando em OK.
 	
-8.	JAVA_HOME é o diretório raíz onde o Java está instalado, além de ser usado para onfigurar as variáveis seguintes também é continuamente referenciado por aplicativos e  frameworks desenvolvidos com Java
+8.	JAVA_HOME é o diretório raíz onde o Java está instalado, além de ser usado para configurar as variáveis seguintes também é continuamente referenciado por aplicativos e  frameworks desenvolvidos com Java
