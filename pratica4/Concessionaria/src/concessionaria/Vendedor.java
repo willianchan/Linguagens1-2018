@@ -1,6 +1,6 @@
 package concessionaria;
 
-public class Funcionarios {
+public class Vendedor {
 
     //Atributos
     private final String nome;
@@ -12,21 +12,21 @@ public class Funcionarios {
     private static double totalDeVendas;
 
     //Construtor
-    public Funcionarios(String nome, double salarioBase, Gerente gerente) {
+    public Vendedor(String nome, double salarioBase, Gerente gerente) {
         this.nome = nome;
         this.salarioBase = salarioBase;
         this.gerente = gerente;
 
-        Funcionarios.totalDeFuncionarios = Funcionarios.totalDeFuncionarios + 1;
+        Vendedor.totalDeFuncionarios = Vendedor.totalDeFuncionarios + 1;
     }
 
     //Getters and Setters
     public static int getTotalDeFuncionarios() {
-        return Funcionarios.totalDeFuncionarios;
+        return Vendedor.totalDeFuncionarios;
     }
 
     public double getComissao() {
-        return 0.05 * Funcionarios.totalDeVendas / Funcionarios.totalDeFuncionarios;
+        return 0.05 * Vendedor.totalDeVendas / Vendedor.totalDeFuncionarios;
     }
 
     public double getSalarioBase() {
@@ -48,6 +48,6 @@ public class Funcionarios {
     ///Metodos
     public void realizaVenda(double valor) {
         this.valorVendas += valor;
-        Funcionarios.totalDeVendas += valor;
+        Vendedor.totalDeVendas += valor;
     }
 }

@@ -35,7 +35,7 @@ public class Gerente {
         this.valorVendas += valor;
     }
 
-    public void darAumento(Funcionarios funcionario, double salario) {
-        funcionario.setSalarioBase(salario);
+    public void darAumento(Vendedor vendedor, double salario) {
+        vendedor.setSalarioBase(salario);
     }
 }
