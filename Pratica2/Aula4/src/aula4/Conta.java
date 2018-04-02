@@ -6,15 +6,25 @@ public class Conta {
     private String numeroConta;
     private Cliente cliente;
     private double saldo;
+    
+    private static int totalDeContas;
 
     //CONSTRUTOR
     public Conta(String numeroConta, double saldo, String nome, String sobrenome, String cpf) {
         this.numeroConta = numeroConta;
         this.cliente = new Cliente(nome, sobrenome, cpf);
         this.saldo = saldo;
+        
+        Conta.totalDeContas = Conta.totalDeContas + 1;
     }
 
+    
+
     //GETERS E SETERS
+    public static int getTotalDeContas() {
+        return Conta.totalDeContas;
+    }
+    
     public String getNumeroConta() {
         return numeroConta;
     }
