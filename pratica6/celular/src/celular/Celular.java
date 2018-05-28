@@ -1,23 +1,66 @@
 package celular;
 
-public class Celular {
+import java.util.Scanner;
 
+public class Celular {
+    
     public static void main(String[] args) {
-        //cria 1 lista
-        ListaDeContatos lista1 = new ListaDeContatos();
         
-        //cria 2 contatos
-        Contato contato1 = new Contato("Glauber", "123456789");
-        Contato contato2 = new Contato("Cleiton", "987654321");
+        //Scanner
+        Scanner sc = new Scanner(System.in);
         
-        //adiciona contatos na lista
-        lista1.adicionarContato(contato1);
-        lista1.adicionarContato(contato2);
+        //Variaveis
+        String entrada;
+        int sair = 0;
         
-        lista1.removerContato(contato1);
+        //cria lista de contatos
+        ListaDeContatos lista = new ListaDeContatos();
         
-        lista1.imprimirLista();
+        //cria contato
+        Contato contato;
         
+        //menu
+        while (true) {
+            if(sair == 1){
+                break;
+            }
+            
+            System.out.println("----- MENU - LISTA DE CONTATOS -----");
+            System.out.println("1. Adicionar Contato");
+            System.out.println("2. Remover Contato");
+            System.out.println("3. Visualizar Contatos");
+            System.out.println("4. Sair");
+            entrada = sc.next();
+            
+            if (!entrada.equals("1") && !entrada.equals("2") && !entrada.equals("3") && !entrada.equals("4")) {
+                System.out.println("Entrada Inválida");
+            } else {
+                switch (entrada) {
+                    case "1":
+                        System.out.print("Nome: ");
+                        String nome = sc.next();
+                        System.out.print("Número: ");
+                        String numero = sc.next();
+                        
+                        contato = new Contato(nome, numero);
+                        lista.adicionarContato(contato);
+                        
+                        break;
+                    case "2":
+                        System.out.print("Digite o Nome que Deseja Remover: ");
+                        nome = sc.next();
+                        lista.removerContato(nome);
+                        break;
+                    case "3":
+                        lista.imprimirLista();
+                        break;
+                    case "4":
+                        sair = 1;
+                        break;
+                }
+            }
+            
+        }
     }
     
 }
