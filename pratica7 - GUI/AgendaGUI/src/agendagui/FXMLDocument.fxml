@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agendagui.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="205.0" layoutY="36.0" onAction="#handleButtonAction" text="Cadastrar" />
+        <Label fx:id="label" layoutX="14.0" layoutY="14.0" minHeight="16" minWidth="69" text="Dados do Novo Contato:" />
+      <TextField fx:id="txtNome" layoutX="14.0" layoutY="36.0" promptText="Nome:" />
+      <TextField fx:id="txtEmail" layoutX="14.0" layoutY="67.0" promptText="Email:" />
+      <TextField fx:id="txtTelefone" layoutX="14.0" layoutY="100.0" promptText="Telefone:" />
+      <Button layoutX="205.0" layoutY="80.0" mnemonicParsing="false" onAction="#ExibirLista" prefHeight="25.0" prefWidth="67.0" text="Exibir" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

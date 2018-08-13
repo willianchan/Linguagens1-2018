@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="122.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="olamundogui.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="143.0" layoutY="49.0" onAction="#handleButtonAction" text="Fazer Operação" />
+        <Label fx:id="label" layoutX="158.0" layoutY="90.0" minHeight="16" minWidth="69" textAlignment="CENTER" />
+      <TextField fx:id="textField1" layoutX="14.0" layoutY="14.0" promptText="1º número" />
+      <TextField fx:id="textField3" layoutX="224.0" layoutY="14.0" promptText="2º número" />
+      <TextField fx:id="textField2" layoutX="173.0" layoutY="14.0" prefHeight="25.0" prefWidth="38.0" promptText="sinal" />
+    </children>
+</AnchorPane>
